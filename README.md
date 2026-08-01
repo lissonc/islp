@@ -1,158 +1,63 @@
-# ISLP_labs
+# Introduction to Statistical Learning with Python — Lab Notebooks
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/intro-stat-learning/ISLP_Labs)
+**BSc Data Science · EBS Universität · Fall Term 2026**
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+**Instructor:** Constantin Lisson
 
-## Authors
+Lab notebooks for the course, accompanying
+[*An Introduction to Statistical Learning, with Applications in Python*](https://www.statlearning.com)
+by James, Witten, Hastie, Tibshirani and Taylor. All labs run in
+**Google Colaboratory** — nothing to install, any device with a browser works.
+A **Google account is required**.
 
-- Trevor Hastie
+## Start here
 
-- Gareth James
+Read the course introduction notebook first. It explains the workflow, the
+Google-account requirement, and the limits of Colab's free tier, and ends
+with a setup check to run before the first session:
 
-- Jonathan Taylor
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch00-course-introduction.ipynb) **Ch00 — Course Introduction and Setup**
 
-- Robert Tibshirani
+**In short:** click a lab's badge below → in Colab choose **File → Save a
+copy in Drive** → run the *Google Colab setup* cell at the top → work
+top-to-bottom. Your work lives in your own Drive copy; the master copies
+here stay clean, and clicking a badge again always gives you a fresh start.
 
-- Daniela Witten
+## The labs
 
-### ISLP
+| Lab | Topic | Open in Colab |
+|-----|-------|---------------|
+| Ch02 | Introduction to Python | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch02-statlearn-lab.ipynb) |
+| Ch03 | Linear Regression | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch03-linreg-lab.ipynb) |
+| Ch04 | Logistic Regression, LDA, QDA, and KNN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch04-classification-lab.ipynb) |
+| Ch05 | Cross-Validation and the Bootstrap | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch05-resample-lab.ipynb) |
+| Ch06 | Linear Models and Regularization Methods | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch06-varselect-lab.ipynb) |
+| Ch07 | Non-Linear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch07-nonlin-lab.ipynb) |
+| Ch08 | Tree-Based Methods | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch08-baggboost-lab.ipynb) |
+| Ch09 | Support Vector Machines | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch09-svm-lab.ipynb) |
+| Ch10 | Deep Learning¹ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch10-deeplearning-lab.ipynb) |
+| Ch11 | Survival Analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch11-surv-lab.ipynb) |
+| Ch12 | Unsupervised Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch12-unsup-lab.ipynb) |
+| Ch13 | Multiple Testing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch13-multiple-lab.ipynb) |
 
-Please ensure you have followed the installation instructions for
-[ISLP](https://github.com/intro-stat-learning/ISLP). This will address
-installation of [jupyterlab](https://github.com/jupyterlab/jupyterlab)
-if necessary, which is not included as a requirement of the labs.
+¹ Before running Ch10, enable a GPU in Colab: **Runtime → Change runtime
+type → T4 GPU**.
 
-### Up-to-date version of labs for ISLP. 
+All links point to the frozen `2026-fall` branch, so lab content will not
+change under you during the term.
 
-This repo will track labs for ISLP as their source code changes.  The
-intent is that building a virtual environment with
-`requirements.txt` will reproduce the results in this repo.
+## Backup options
 
-To install the current version of the requirements run
+If you cannot use Google Colab, contact the instructor. The labs also run in
+[GitHub Codespaces](https://codespaces.new/lissonc/islp), and experienced
+students can set up a local environment with Python 3.12 and
+`pip install -r requirements.txt` (exact pinned package versions).
 
-```
-uv pip install -r https://raw.githubusercontent.com/intro-stat-learning/ISLP_labs/v2.2.2/requirements.txt;
-```
+## Credits and license
 
-The labs can now be run via:
-
-```
-uv run jupyter lab Ch02-statlearn-lab.ipynb
-```
-
-
-# Zip / tarball
-
-You can download all the labs as a `.zip` or `.tar.gz` [here](https://github.com/intro-stat-learning/ISLP_labs/releases/tag/v2.2.2)
-
-# Setup script
-
-We've added a setup script that ensures precisely the desired labs are checked out along with a `uv` virtual environment being created. Follow
-these instructions:
-
-To set up a local environment to run the notebooks for a specific version of the labs, you can use the `setup_notebook_env.py` script. This script will create a directory, download the labs, and set up a Python virtual environment with all the necessary packages.
-
-## Prerequisites
-
-This script relies on `uv` for managing Python environments. If you don't have `uv` installed, you can install it using `pipx` or `cargo`:
-
-*   **Using `pipx` (recommended):**
-    ```bash
-    pip install pipx
-    pipx ensurepath
-    pipx install uv
-    ```
-
-*   **Using `cargo` (if you have Rust installed):**
-    ```bash
-    cargo install uv
-    ```
-
-For more detailed installation instructions, please refer to the [uv documentation](https://github.com/astral-sh/uv#installation).
-
-## Instructions
-
-### 1. Download the setup script
-
-You can find the raw Python script here: [`setup_notebook_env.py`](https://raw.githubusercontent.com/intro-stat-learning/ISLP_labs/main/setup_notebook_env.py)
-
-To download and run it, first ensure `uv` is installed (see Prerequisites above), then execute the following commands in your terminal:
-
-```bash
-curl -LO https://raw.githubusercontent.com/intro-stat-learning/ISLP_labs/main/setup_notebook_env.py
-```
-
-### 2. Run the setup script
-
-Open your terminal and run the following command to set up the environment for version `v2.2.2` of the labs with Python `3.12`.
-
-```
-uv run python setup_notebook_env.py --outdir ISLP_v2.2.2 --commit v2.2.2 --python-version 3.12
-```
-
-You can also specify one or more notebooks to run automatically after setup.
-
-*   `--outdir ISLP_v2.2.2`: This will create a directory named `ISLP_v2.2.2` for your labs.
-*   `--commit v2.2.2`: This specifies that you want to use version `v2.2.2` of the labs.
-*   `--python-version 3.12`: This will use Python 3.12 for the environment.
-*   `Ch02-statlearn-lab.ipynb`: This is an optional argument to run a specific notebook after the setup is complete. It is meant for testing to be sure given notebooks run but is not required. You can list more than one notebook.
-
-### 3. Activate the environment
-
-Once the script is finished, you can activate the virtual environment to run other notebooks or work with the lab materials.
-
-*   **On macOS and Linux:**
-    ```bash
-    source ISLP_v2.2.2/.venv/bin/activate
-    ```
-
-*   **On Windows:**
-    ```bash
-    ISLP_v2.2.2\.venv\Scripts\activate
-    ```
-
-### 4. Run other notebooks
-
-After activating the environment, you can start Jupyter Lab to run other notebooks.
-
-```bash
-jupyter lab
-```
-
-# R Markdown files
-
-Earlier versions of this repo maintained R Markdown versions of the lab next to the Jupyter notebooks. These have been removed from the repo but can be built from the
-notebooks at any time by
-
-```bash
-make Rmd
-```
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/tibshirani"><img src="https://avatars.githubusercontent.com/u/2848609?v=4?s=100" width="100px;" alt="tibshirani"/><br /><sub><b>tibshirani</b></sub></a><br /><a href="https://github.com/intro-stat-learning/ISLP_labs/commits?author=tibshirani" title="Code">💻</a> <a href="#content-tibshirani" title="Content">🖋</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://web.stanford.edu/~hastie/"><img src="https://avatars.githubusercontent.com/u/13293253?v=4?s=100" width="100px;" alt="trevorhastie"/><br /><sub><b>trevorhastie</b></sub></a><br /><a href="https://github.com/intro-stat-learning/ISLP_labs/commits?author=trevorhastie" title="Code">💻</a> <a href="#content-trevorhastie" title="Content">🖋</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/danielawitten"><img src="https://avatars.githubusercontent.com/u/12654191?v=4?s=100" width="100px;" alt="danielawitten"/><br /><sub><b>danielawitten</b></sub></a><br /><a href="https://github.com/intro-stat-learning/ISLP_labs/commits?author=danielawitten" title="Code">💻</a> <a href="#content-danielawitten" title="Content">🖋</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/tschm"><img src="https://avatars.githubusercontent.com/u/2046079?v=4?s=100" width="100px;" alt="Thomas Schmelzer"/><br /><sub><b>Thomas Schmelzer</b></sub></a><br /><a href="https://github.com/intro-stat-learning/ISLP_labs/commits?author=tschm" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://statweb.stanford.edu/~jtaylo"><img src="https://avatars.githubusercontent.com/u/341611?v=4?s=100" width="100px;" alt="Jonathan Taylor"/><br /><sub><b>Jonathan Taylor</b></sub></a><br /><a href="https://github.com/intro-stat-learning/ISLP_labs/commits?author=jonathan-taylor" title="Code">💻</a> <a href="#content-jonathan-taylor" title="Content">🖋</a></td>
-</tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+These labs were written by the ISLP authors — Trevor Hastie, Gareth James,
+Jonathan Taylor, Robert Tibshirani and Daniela Witten. This repository is a
+teaching fork of
+[intro-stat-learning/ISLP_labs](https://github.com/intro-stat-learning/ISLP_labs)
+that only adds course-specific setup for running the labs in Google Colab.
+Distributed under the BSD 2-Clause License (see [LICENSE](LICENSE)).
