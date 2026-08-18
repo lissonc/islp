@@ -34,14 +34,10 @@ here stay clean, and clicking a badge again always gives you a fresh start.
 | Ch06 | Linear Models and Regularization Methods | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch06-varselect-lab.ipynb) |
 | Ch07 | Non-Linear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch07-nonlin-lab.ipynb) |
 | Ch08 | Tree-Based Methods | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch08-baggboost-lab.ipynb) |
-| Ch09 | Support Vector Machines | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch09-svm-lab.ipynb) |
-| Ch10 | Deep Learning¹ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch10-deeplearning-lab.ipynb) |
-| Ch11 | Survival Analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch11-surv-lab.ipynb) |
 | Ch12 | Unsupervised Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch12-unsup-lab.ipynb) |
-| Ch13 | Multiple Testing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lissonc/islp/blob/2026-fall/Ch13-multiple-lab.ipynb) |
 
-¹ Before running Ch10, enable a GPU in Colab: **Runtime → Change runtime
-type → T4 GPU**.
+Lab numbers follow the book's chapters, so the list skips the chapters that
+are not part of this course.
 
 All links point to the frozen `2026-fall` branch, so lab content will not
 change under you during the term.
