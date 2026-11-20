@@ -39,9 +39,6 @@ here stay clean, and clicking a badge again always gives you a fresh start.
 Lab numbers follow the book's chapters, so the list skips the chapters that
 are not part of this course.
 
-All links point to the frozen `2026-fall` branch, so lab content will not
-change under you during the term.
-
 ## Backup options
 
 If you cannot use Google Colab, contact the instructor. The labs also run in
